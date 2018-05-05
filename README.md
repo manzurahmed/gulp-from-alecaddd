@@ -1,6 +1,7 @@
-# gulp-from-alecaddd
+# Gulp Tutorial as I have learned from Alecaddd (Alessandro Castellani)
+Youtube Channel: https://www.youtube.com/channel/UCbmBY_XYZqCa2G0XmFA7ZWg
 
-# DEVELOPMENT ENVIRONMENT USING NODE JS AND GULP
+# Development Environment using NodeJS and Gulp
 
 
 1.   Download latest 64-bit version of NodeJS from https://nodejs.org/en/.
