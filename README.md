@@ -14,34 +14,42 @@ Youtube Channel: https://www.youtube.com/channel/UCbmBY_XYZqCa2G0XmFA7ZWg
 ```
      $ npm install --save-dev gulp
 ```
-     and press Enter key.
+
+and press Enter key.
 
 # Create package.json file
 
 1.   Type
+
 ```
 $ npm init
 ```
-     and press enter.
+
+and press enter.
 
 2.   NPM will start asking you about your project one by one. Respond to the questions by typing in your correct inputs.
      At the end, a **"package.json"** file will be created for me.
 
 3.   If necessary. open the "package.json" file and inspect it if you need any modification in it.
 4.   Now, type,
+
 ```
      npm install --save-dev gulp
 ```
-     NPM will install all dependencies from the NPM repository for your project.
+
+NPM will install all dependencies from the NPM repository for your project.
 
 If any developer ever need the exact package.json file for his project, send it to him.
 The developer just need to issue the command:
+
 ```
     $ npm install
 ```
+
 NPM will recognize that your already have a package.json file and download all files dependent for your project.
 
 # To import a Dev Dependency in your project
+
 ```
     $ npm install --save-dev gulp-rename
 or,
