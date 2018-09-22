@@ -62,17 +62,22 @@ Bangla Tutorial: https://medium.com/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%9
 
 ### ADDITIONAL READING
 -----------------------
-NPM Crash Course https://www.youtube.com/watch?v=jHDhaSSKmB0
-JSON Crash Course https://www.youtube.com/watch?v=wI1CWzNtE-M
-Node.js Tutorial for Beginners https://www.youtube.com/watch?v=U8XF6AFGqlc
-Sass Workflow & Dev Server from scratch using Gulp https://www.youtube.com/watch?v=rmXVmfx3rNo
-Gulp workflow 2017 https://www.youtube.com/watch?v=KZ6LuPadEvk
-Gulp - The Basics https://www.youtube.com/watch?v=dwSLFai8ovQ
+
+- NPM Crash Course https://www.youtube.com/watch?v=jHDhaSSKmB0
+- JSON Crash Course https://www.youtube.com/watch?v=wI1CWzNtE-M
+- Node.js Tutorial for Beginners https://www.youtube.com/watch?v=U8XF6AFGqlc
+- Sass Workflow & Dev Server from scratch using Gulp https://www.youtube.com/watch?v=rmXVmfx3rNo
+- Gulp workflow 2017 https://www.youtube.com/watch?v=KZ6LuPadEvk
+- Gulp - The Basics https://www.youtube.com/watch?v=dwSLFai8ovQ
 
 Design + Code - Hour 4.1: Project Setup (using Gulp) https://www.youtube.com/watch?v=nY4kQssg3lw
-Bootstrap 4 Crash Course https://www.youtube.com/watch?v=hnCmSXCZEpU
--------------------------
-> Install Gulp Globally
-    npm install -g gulp
-> Also install Gulp locally (development dependency)
-    npm install --save-dev gulp
+
+### Bootstrap 4 Crash Course https://www.youtube.com/watch?v=hnCmSXCZEpU
+1. Install Gulp Globally
+```
+npm install -g gulp
+```
+2. Also install Gulp locally (development dependency)
+```
+npm install --save-dev gulp
+```
