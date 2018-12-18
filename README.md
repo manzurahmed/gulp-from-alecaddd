@@ -30,8 +30,8 @@ and press enter.
 2.   NPM will start asking you about your project one by one. Respond to the questions by typing in your correct inputs.
      At the end, a **"package.json"** file will be created for me.
 
-3.   If necessary. open the "package.json" file and inspect it if you need any modification in it.
-4.   Now, type,
+3.   If necessary. open the "**package.json**" file and inspect it if you need any modification in it.
+4.   Now, type the following command
 
 ```
      npm install --save-dev gulp
@@ -73,11 +73,15 @@ Bangla Tutorial: https://medium.com/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%9
 Design + Code - Hour 4.1: Project Setup (using Gulp) https://www.youtube.com/watch?v=nY4kQssg3lw
 
 ### Bootstrap 4 Crash Course https://www.youtube.com/watch?v=hnCmSXCZEpU
+
 1. Install Gulp Globally
+
 ```
 npm install -g gulp
 ```
+
 2. Also install Gulp locally (development dependency)
+
 ```
 npm install --save-dev gulp
 ```
