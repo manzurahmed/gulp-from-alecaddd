@@ -99,7 +99,7 @@ gulp hello
 ```
 তারপর এন্টার চাপলে দেখবেন আপনার লেখা প্রিন্ট হয়েছেঃ
 
-!(https://github.com/manzurahmed/gulp-from-alecaddd/blob/master/images/hello.png)
+![First Hello Message](https://github.com/manzurahmed/gulp-from-alecaddd/blob/master/images/hello.png)
 
 
 # Further reading
