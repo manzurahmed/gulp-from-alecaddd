@@ -29,6 +29,7 @@ and press enter.
 
 2.   NPM will start asking you about your project one by one. Respond to the questions by typing in your correct inputs.
      At the end, a **"package.json"** file will be created for me.
+     Beside this, a **package-lock.json** is also created. This file keeps a log of what I do with Gulp.
 
 3.   If necessary. open the "**package.json**" file and inspect it if you need any modification in it.
 4.   Now, type the following command
