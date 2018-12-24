@@ -104,6 +104,35 @@ gulp hello
 
 ![First Hello Message](https://github.com/manzurahmed/gulp-from-alecaddd/blob/master/images/hello.png)
 
+# Default gulp task
+
+যে কোন টাক্স রান করার জন্য আমি gulp এর পরে স্পেসিফিক ঐ টাক্স এর নাম লিখে এন্টার কি চাপ দিলেই টাক্সটি রান করবে। যেমনঃ
+
+```
+gulp style
+or,
+gulp js
+```
+
+এভাবে যতগুলো টাক্স আছে প্রয়োজন মত আমার টাক্সগুলোকে রান করাতে পারব। কিন্তু, বারংবার ম্যানুয়ালি টাক্স রান করা বিরক্তিকর ও কষ্টসাধ্য কাজ।
+
+এই সমস্যার সমাধানে রয়েছে gulp এর default task রান করবার ব্যবস্থা। এ জন্য gulpfile.js ফাইলে নতুন একটি gulp.task তৈরী করব, যার নাম হবে 'default'।
+
+```
+gulp.task( 'default', ['style', 'js'];
+```
+
+এই টাক্স এ ২টা প্যারামিটারঃ টাক্সের নাম এবং যে টাক্সগুলো রান করাব তার একটি স্ট্রিং এ্যারে।
+
+এবার, টার্মিনালে গিয়ে শুধুমাত্র gulp লিখে এন্টার কি চাপ দিলেই default টাক্সটির সাথে জুড়ে দেয়া টাক্স ২টা, 'style' এবং 'js' রান হয়ে যাবে।
+
+```
+gulp
+```
+
+# watch - It's like Magic
+
+
 
 # Further reading
 
