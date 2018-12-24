@@ -12,7 +12,7 @@ Youtube Channel: https://www.youtube.com/channel/UCbmBY_XYZqCa2G0XmFA7ZWg
 3.   Install GulpJS globally from NPM. Type
 
 ```
-     $ npm install --save-dev gulp
+npm install --save-dev gulp
 ```
 
 and press Enter key.
@@ -22,7 +22,7 @@ and press Enter key.
 1.   Type
 
 ```
-$ npm init
+npm init
 ```
 
 and press enter.
@@ -35,7 +35,7 @@ and press enter.
 4.   Now, type the following command
 
 ```
-     npm install --save-dev gulp
+npm install --save-dev gulp
 ```
 
 NPM will install all dependencies from the NPM repository for your project.
@@ -44,7 +44,7 @@ If any developer ever need the exact package.json file for his project, send it 
 The developer just need to issue the command:
 
 ```
-    $ npm install
+npm install
 ```
 
 NPM will recognize that your already have a package.json file and download all files dependent for your project.
@@ -52,9 +52,11 @@ NPM will recognize that your already have a package.json file and download all f
 # To import a Dev Dependency in your project
 
 ```
-    $ npm install --save-dev gulp-rename
+npm install --save-dev gulp-rename
 or,
-    $ npm install --save-dev gulp-sass
+npm install --save-dev gulp-sass
+or,
+npm install --save-dev less-plugin-autoprefix
 ```    
 
 এখন প্রোজেক্টের রুট ডিরেক্টরিতে gulpfile.js নামে একটি ফাইল ক্রিয়েট করতে হবে যেটাতেই মূলত Gulp এর অটোম্যাট টাস্ক রানারের কোডগুলো থাকবে। অনেকটা Config ফাইলের মতোই।
