@@ -1,3 +1,4 @@
+```
 var gulp = require( 'gulp' );
 var rename = require( 'gulp-rename' );
 var sass = require(  'gulp-sass' );
@@ -102,3 +103,4 @@ gulp.task('watch', ['default', 'browser-sync'], function(){
 	gulp.watch( htmlWatch, reload );
 	gulp.watch( phpWatch, reload );
 });
+```
