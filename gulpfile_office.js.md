@@ -1,3 +1,4 @@
+```
 var gulp = require('gulp');
 // gulp-less
 // https://www.npmjs.com/package/gulp-less
@@ -72,3 +73,4 @@ gulp.task( 'watch', function() {
     gulp.watch( styleWatch, gulp.series('style') );
     gulp.watch( jsWatch, gulp.series('js') );
 });
+```
