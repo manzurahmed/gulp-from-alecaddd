@@ -150,16 +150,32 @@ Bangla Tutorial: https://medium.com/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%9
 
 Design + Code - Hour 4.1: Project Setup (using Gulp) https://www.youtube.com/watch?v=nY4kQssg3lw
 
-### Bootstrap 4 Crash Course https://www.youtube.com/watch?v=hnCmSXCZEpU
+# Gulp 3.9.1 থেকে Gulp 4 এ আপগ্রেড করার পদ্ধতি
 
-1. Install Gulp Globally
+### npm outdated
+
+আগের কোন প্রজেক্টে ব্যবহৃত প্যাকেজগুলোর নতুন নতুন ভার্সন রিলিজ হচ্ছে। এই প্যাজেকগুলোর মধ্যে কোনগুলোর আপডেটেড ভার্সন পাওয়া যাচ্ছে, তা দেখতে হলে, এই কমান্ডটি ব্যবহৃত হয়।
+
+### npm update
+
+মাইনর ভার্সন থেকে কারেন্ট ভার্সনে আপডেট করতে এই কমান্ডটি চালাতে হবে।
+
+মাইনর ভার্সনগুলো আপডেট করা হয়। কারণ, প্যাকেজগুলো মেজর ভার্সনে আপডেট করলে, ব্যাকওয়ার্ড কম্পাটিবিলিটি'র কারণ প্রজেক্ট এক্সিকিউশন বন্ধ হয়ে যেতে পারে। সিকিউরিটি'র কারণে মাইনর ভার্সনে আপডেট করা হয়।
+
+### মেজর ভার্সনে আপডেট করা
+
+আমার প্রজেক্টে gulp ৩.৯.১ ব্যবহার করা হয়েছিল। বর্তমানে gulp 4.0 এ আপগ্রেড করা হবে। এছাড়াও babelify প্যাকেজকে লেটেস্ট বা কারেন্ট ভার্সনে আপডেটের জন্য প্রথমে babel/core প্যাকেজ ইন্সটল করতে হবে।
 
 ```
-npm install -g gulp
+npm install @babel/core --save-dev
 ```
 
-2. Also install Gulp locally (development dependency)
+এবার, babelify প্যাকেজকে ইন্সটল করে নিব।
 
 ```
-npm install --save-dev gulp
+npm install babelify@latest --save-dev
 ```
+
+নতুন ভার্সনে আপডেট হয়েছে কিনা তা চেক করতে package.json ফাইলটি ওপেন করে দেখে নিতে হবে।
+
+
