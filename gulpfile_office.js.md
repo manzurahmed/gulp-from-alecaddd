@@ -1,4 +1,6 @@
-```
+# Office "gulpfile.js"
+
+```js
 var gulp = require('gulp');
 // gulp-less
 // https://www.npmjs.com/package/gulp-less
@@ -8,15 +10,18 @@ var less = require('gulp-less');
 var rename = require( 'gulp-rename' );
 // gulp css minify
 // npm install --save-dev gulp-clean-css
-let cleanCSS = require('gulp-clean-css');
+let cleanCSS = require( 'gulp-clean-css' );
+// Browserify
+var browserify = require( 'browserify' );
 
 // LESS AUTOPREFIX: less-plugin-autoprefix
 // npm install --save-dev less-plugin-autoprefix
 var LessAutoprefix = require('less-plugin-autoprefix');
 var autoprefix = new LessAutoprefix({ browsers: ['last 2 versions'] });
 
-// gulp-uglify
-//var uglify = require( 'gulp-uglify' );
+// Minify + Uglify JavaScript with UglifyJS3.
+// https://www.npmjs.com/package/gulp-uglif
+var uglify = require( 'gulp-uglify' );
 
 // LESS source file
 //var styleSRC   = './less/template.less'; // source file
@@ -25,10 +30,9 @@ var styleDIST  = './assets/css/'; // destination path
 var styleWatch = 'less/*.less';
 
 var jsSRC = 'js/custom.js';
-// var jsFOLDER = 'js/';
 var jsDIST  = './assets/js/';
 var jsWatch = 'js/*.js';
-// var jsFILES = [jsSRC];
+var jsFILES = [jsSRC]; // in the array, include your files to handle
 
 // To run this task seperately: "gulp style"
 gulp.task( 'style', function(){
@@ -53,8 +57,17 @@ gulp.task( 'style', function(){
 });
 
 gulp.task( 'js', function() {
-    gulp.src( jsSRC )
-    .pipe( gulp.dest( jsDIST ) )
+    return gulp.src( jsSRC )
+    .pipe( uglify() )
+    .pipe(
+        rename( {
+            suffix: '.min',
+            extname: ".js"
+        } )
+    )
+    .pipe(
+        gulp.dest( jsDIST )
+    );
 });
 
 // default task: Just type "gulp" in the terminal and
